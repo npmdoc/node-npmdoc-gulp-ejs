@@ -1,9 +1,14 @@
-# api documentation for  [gulp-ejs (v3.0.1)](https://github.com/rogeriopvl/gulp-ejs)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-ejs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-ejs)
+# npmdoc-gulp-ejs
+
+#### api documentation for  [gulp-ejs (v3.0.1)](https://github.com/rogeriopvl/gulp-ejs)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-ejs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-ejs)
+
 #### A plugin for Gulp that parses ejs template files
 
-[![NPM](https://nodei.co/npm/gulp-ejs.png?downloads=true)](https://www.npmjs.com/package/gulp-ejs)
+[![NPM](https://nodei.co/npm/gulp-ejs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-ejs)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-ejs_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-ejs/build/screenCapture.npmPackageListing.svg)
 
@@ -61,13 +66,11 @@
     "main": "./index.js",
     "maintainers": [
         {
-            "name": "rogeriopvl",
-            "email": "rogeriopvl@gmail.com"
+            "name": "rogeriopvl"
         }
     ],
     "name": "gulp-ejs",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/rogeriopvl/gulp-ejs.git"
@@ -79,16 +82,6 @@
     "version": "3.0.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-ejs](#apidoc.module.gulp-ejs)
-
-
-
-# <a name="apidoc.module.gulp-ejs"></a>[module gulp-ejs](#apidoc.module.gulp-ejs)
 
 
 
