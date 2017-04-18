@@ -54,12 +54,70 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-ejs">module gulp-ejs</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-ejs.gulp-ejs">
+            function <span class="apidocSignatureSpan"></span>gulp-ejs
+            <span class="apidocSignatureSpan">(data, options, settings)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-ejs" id="apidoc.module.gulp-ejs">module gulp-ejs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-ejs.gulp-ejs" id="apidoc.element.gulp-ejs.gulp-ejs">
+        function <span class="apidocSignatureSpan"></span>gulp-ejs
+        <span class="apidocSignatureSpan">(data, options, settings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-ejs = function (data, options, settings) {
+  data = data || {}
+  options = options || {}
+  settings = settings || {}
+
+  return through.obj(function (file, enc, cb) {
+    if (file.isNull()) {
+      this.push(file)
+      return cb()
+    }
+
+    if (file.isStream()) {
+      this.emit(
+        'error',
+        new gutil.PluginError('gulp-ejs', 'Streaming not supported')
+      )
+    }
+
+    data = assign({}, data, file.data)
+    options.filename = file.path
+
+    try {
+      file.contents = new Buffer(
+        ejs.render(file.contents.toString(), data, options)
+      )
+
+      if (typeof settings.ext !== 'undefined') {
+        file.path = gutil.replaceExtension(file.path, settings.ext)
+      }
+    } catch (err) {
+      this.emit('error', new gutil.PluginError('gulp-ejs', err.toString()))
+    }
+
+    this.push(file)
+    cb()
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
