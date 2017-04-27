@@ -1,6 +1,6 @@
 # npmdoc-gulp-ejs
 
-#### api documentation for  [gulp-ejs (v3.0.1)](https://github.com/rogeriopvl/gulp-ejs)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-ejs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-ejs)
+#### basic api documentation for  [gulp-ejs (v3.0.1)](https://github.com/rogeriopvl/gulp-ejs)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-ejs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-ejs)
 
 #### A plugin for Gulp that parses ejs template files
 
@@ -79,7 +79,8 @@
         "pretest": "standard",
         "test": "mocha"
     },
-    "version": "3.0.1"
+    "version": "3.0.1",
+    "bin": {}
 }
 ```
 
